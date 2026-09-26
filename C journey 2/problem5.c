@@ -6,7 +6,7 @@ int main(){
     int b=30;
     int c=20;
 
-    printf("First calculatin's answer is= %d\n\n", a-b);
+    printf("The answer of the first calculation is= %d\n\n", a-b);
 
     int d=a-b;
 
