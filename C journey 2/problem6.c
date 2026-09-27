@@ -7,7 +7,7 @@ scanf("%f", &a);
 printf("Enter your height:");
 scanf("%f", &b);
 
-
+/* এটি দ্বারা ক্ষেত্রফল হিসাব করা হয় */
 printf("Your area is: %.2f", 0.5*a*b);
 return 0;
 
