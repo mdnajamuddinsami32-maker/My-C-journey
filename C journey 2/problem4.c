@@ -11,7 +11,7 @@
            int pentotal=pen*3;
           int notebooktotal=notebook*2;
 
-          printf("Total= %dtk", pentotal+notebooktotal);
+          printf("Total= %d", pentotal+notebooktotal);
           return 0;
 
           }
