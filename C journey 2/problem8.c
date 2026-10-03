@@ -31,8 +31,12 @@ int main(){
         printf("You will get only 20tk");
     }
 
-    else(science>=50 && math>=50){
-        printf("Mara kaw. Fail tumi");
+    else if(science>=50 && math>=50){
+        printf("Mara kaw. Result karap tumar.");
+    }
+
+    else{
+        printf("You are fail.");
     }
 
     return 0;
