@@ -1,0 +1,37 @@
+import speech_recognition as sr
+import webbrowser
+
+recognizer = sr.Recognizer()
+
+while True:
+    with sr.Microphone() as source:
+        print("Listening...")
+        audio = recognizer.listen(source)
+
+    try:
+        command = recognizer.recognize_google(audio)
+        command = command.lower()
+
+        print("You said:", command)
+
+        if "hello" in command:
+            print("Hello Sami!")
+
+        elif "open youtube" in command:
+            webbrowser.open("https://www.youtube.com")
+
+        elif "open google" in command:
+            webbrowser.open("https://www.google.com")
+
+        elif "stop" in command or "exit" in command:
+            print("Program stopped.")
+            break
+
+        else:
+            print("I don't understand that command.")
+
+    except sr.UnknownValueError:
+        print("Sorry, I couldn't understand.")
+
+    except sr.RequestError:
+        print("Internet connection problem.")
